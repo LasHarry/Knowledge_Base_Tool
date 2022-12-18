@@ -15,7 +15,7 @@ The user can insert new names into the knowledge base via a text field. The text
 - Database connection via *create_connection()* in `db_handler.py`
 
 <div align="center">
-<img src="images/entry_page_autocomplete.PNG" width="650"/></br>
+  <kbd><img src="images/entry_page_autocomplete.PNG" width="650"/></kbd></br>
 <figcaption><I>Figure 1: Entry form with autocomplete function</I></figcaption>
 </div>
 
