@@ -75,7 +75,6 @@ def add_new_entry():
 def edit_entry():
     # get all entries with the highest trust scores
     names = KnowledgeBase.query.order_by(KnowledgeBase.trust_score.desc()).limit(10)
-    print(names)
 
     return render_template('data_table.html', title='Knowledge base table', names=names)
 
