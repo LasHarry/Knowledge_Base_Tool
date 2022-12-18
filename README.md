@@ -2,6 +2,15 @@
 
 This Python [Flask](https://flask.palletsprojects.com/en/2.2.x/) project was developed as part of the master course **Development Methods of Applied Intelligent Software Systems** in the winter semester 2022/23 at Riga Technical University.
 
+## System requirements
+
+Following Flask libraries should be installed via `pip`:
+- sqlite3
+- Flask
+- Flask-Bootstrap
+- Flask-WTF / wtforms
+- Flask-SQLAlchemy (Has to be Version 2.5.1!)
+
 ## System Design and Functionality
 
 **Database insert and autocomplete function**
@@ -54,8 +63,8 @@ If a result is approved, the selected row is recalculated to a higher trust scor
 If the result is rejected, every row is given a lower trust score. Every score with a value < 0.2 is deleted from the database.
 
 <p float="left" align="middle">
-  <kbd><img src="images/message_acceptance.PNG" width="30%" /></kbd>
-  <kbd><img src="images/message_rejection.PNG" width="30%" /></kbd> 
+  <img src="images/message_acceptance.PNG" width="30%" />
+  <img src="images/message_rejection.PNG" width="30%" /> 
 </p>
 <div align="center">
 <figcaption><I>Figure 4 & 5: Acceptance and Rejection message</I></figcaption>
