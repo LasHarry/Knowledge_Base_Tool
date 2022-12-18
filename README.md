@@ -4,12 +4,12 @@ This Python [Flask](https://flask.palletsprojects.com/en/2.2.x/) project was dev
 
 ## System requirements
 
-Following Flask libraries should be installed via `pip`:
+Following Python libraries should be installed via `pip`:
 - sqlite3
 - Flask
 - Flask-Bootstrap
 - Flask-WTF / wtforms
-- Flask-SQLAlchemy (Has to be Version 2.5.1!)
+- Flask-SQLAlchemy (Has to be Version 2.5.1!) 
 
 ## System Design and Functionality
 
@@ -75,6 +75,10 @@ If the result is rejected, every row is given a lower trust score. Every score w
 <div align="center">
 <figcaption><I>Figure 4 & 5: Acceptance and Rejection message</I></figcaption>
 </div>
+
+## Limitations
+- Errors can occur during trust score recalculation. In some cases, the value will not be overwritten.
+- In some cases, database handling might result in a time-out.
 
 
 Author:
