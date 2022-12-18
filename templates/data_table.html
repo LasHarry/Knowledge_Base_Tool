@@ -1,0 +1,29 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block content %}
+<table id="data" class="table table-striped" xmlns="http://www.w3.org/1999/html">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Trust Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for name in names %}
+        <tr>
+          <td>{{ name.id }}</td>
+          <td>{{ name.full_name }}</td>
+          <td>{{ name.trust_score }}</td>
+          <input type="hidden" id="name_id" name="name_id" value="{{name.id}}">
+          <td>
+            <form action="/process_action" class="form" method="post">
+              <button type="submit" name="submit" value="{{ name.id }}" class="btn btn-info">Accept</button>
+              <input class="btn btn-info" type="submit" name="reject" value="Reject">
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

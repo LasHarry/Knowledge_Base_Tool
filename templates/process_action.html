@@ -1,0 +1,12 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block content %}
+
+    <div class="card-body">
+        <h5 class="card-title"><p class="text-success"><strong>{{ message }}</strong></p></h5>
+        <p><a href="{{ url_for('add_new_entry') }}" class="btn btn-info" role="button">Add another name</a>
+        </p>
+    </div>
+
+{% endblock %}
+
