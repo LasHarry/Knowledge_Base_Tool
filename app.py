@@ -47,8 +47,8 @@ def add_new_entry():
     if form1.validate_on_submit():
         # get name from text field
         full_name = request.form['full_name']
-        # set a default trust score between 0 and 1
-        trust_score = round(random.random(), 2)
+        # set a default trust score to 0.5
+        trust_score = 0.5
 
         # create SQL insert query
         entry = KnowledgeBase(full_name, trust_score)
