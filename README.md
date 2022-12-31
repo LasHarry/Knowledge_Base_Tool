@@ -44,7 +44,7 @@ A successful insert gives back a short confirmation message. The user can now in
 
 **Result table**
 
-The result table displays the entries with the highest trust score. The initial trust score is defined randomly with a float value between 0 and 1. Each row provides buttons to approve or reject the result.
+The result table displays the entries with the highest trust score. The initial trust score is defined by default at 0.5. Each row provides buttons to approve or reject the result.
 
 - Database query via *edit_entry()* in `app.py`
 - Front-end construction in `data_table.html`
